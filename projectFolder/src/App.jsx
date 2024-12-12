@@ -1,10 +1,17 @@
 import "./App.css";
-import HomeShowCase from "./components/homePageComponents/homeShowCase";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/homePageComponents/home";
+import ContactPage from "./components/contactPageComponents/contactPage";
 
 function App() {
   return (
     <div>
-      <HomeShowCase />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Contact-Page" element={<ContactPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
