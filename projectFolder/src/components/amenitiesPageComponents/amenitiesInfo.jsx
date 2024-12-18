@@ -99,7 +99,7 @@ export default function AmenetiesInfo() {
               ResponseThree={"Nearby Walking Trails"}
             />
           </div>
-          <div className="mr-10">
+          <div className="mr-10 pb-10">
             <AmenitiesCards
               title={"Energy Efficiency"}
               FactOne={"Solar Panels"}
