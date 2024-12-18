@@ -14,6 +14,7 @@ import img9 from "../../assets/homeImages/Homeimage9.webp";
 import img10 from "../../assets/homeImages/Homeimage10.webp";
 import img11 from "../../assets/homeImages/Homeimage11.webp";
 import img12 from "../../assets/homeImages/Homeimage12.webp";
+import Header from "../header";
 
 export default function HomeShowCase({ imageIndex }) {
   const navigate = useNavigate();
@@ -35,14 +36,7 @@ export default function HomeShowCase({ imageIndex }) {
 
   return (
     <div className="relative w-full h-screen ">
-      <div className="absolute translate-x-[76px] font-normal select-none cursor-pointer whitespace-nowrap flex translate-y-[34px] text-white font-instrument-sans size-[18px] z-10 gap-x-[20px]">
-        <div className="font-semibold">Home</div>
-        <div className="font-normal">Amenities</div>
-        <div className="font-normal">Video Tour</div>
-        <div className="font-normal">Floor Plan</div>
-        <Button onClick={() => navigate("/Contact-Page")}>Contact Agent</Button>
-      </div>
-
+      <Header />
       <RectInfoBox className={"pl-[76px] flex items-center h-screen w-full"} />
       <img
         src={images[imageIndex]}

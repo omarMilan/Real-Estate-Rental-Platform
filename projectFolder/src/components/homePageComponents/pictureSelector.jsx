@@ -41,7 +41,7 @@ export default function PictureSelector() {
     <div>
       <HomeShowCase imageIndex={imageSelected} />
 
-      <div className="absolute bottom-0 w-full h-32 opacity-[93%] bg-black flex gap-x-10 pl-10">
+      <div className="absolute bottom-0 w-full h-32 opacity-[93%] bg-black flex gap-x-10 pl-10 select-none">
         {images.map((image, index) => (
           <Button key={index} onClick={() => handleImageClick(index)}>
             <div

@@ -11,6 +11,15 @@ export default {
       pResTwo: "320px",
     },
     extend: {
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" }, // Correct direction for leftward scrolling
+        },
+      },
+      animation: {
+        scroll: "scroll 80s linear infinite", // 60 seconds for smooth continuous animation
+      },
       fontFamily: {
         "instrument-sans": ['"Instrument Sans"', "sans-serif"],
       },
