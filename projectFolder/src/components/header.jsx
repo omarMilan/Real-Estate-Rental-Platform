@@ -27,8 +27,9 @@ export default function Header() {
           Amenities
         </div>
         <div
+          onClick={() => navigate("/VideoTour-Page")}
           className={`cursor-pointer ${
-            location.pathname === "/Video-Tour"
+            location.pathname === "/VideoTour-Page"
               ? "font-semibold"
               : "font-normal"
           }`}

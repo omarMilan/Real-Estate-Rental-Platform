@@ -5,7 +5,7 @@ import AmenetiesInfo from "./amenitiesInfo";
 export default function AmenitiesPage() {
   return (
     <div>
-      <div className="absolute top-0 w-full h-32 bg-gradient-to-b from-black to-transparent opacity-50 z-10" />
+      <div className="absolute top-0 w-full h-32 bg-gradient-to-b from-black to-transparent opacity-70 z-10" />
       <Header />
       <div className="relative w-full h-[500px] overflow-hidden">
         <img
