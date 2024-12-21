@@ -6,7 +6,7 @@ export default function VideoTourPage() {
   return (
     <div className="relative">
       {/* Gradient Overlay */}
-      <div className="absolute top-0 w-full h-32 bg-gradient-to-b from-black to-transparent opacity-70 z-0" />
+      <div className="absolute top-0 w-full h-32 bg-gradient-to-b from-black to-transparent opacity-70 z-10" />
 
       {/* Header */}
       <Header />

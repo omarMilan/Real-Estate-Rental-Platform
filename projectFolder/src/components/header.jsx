@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <div className="absolute w-full h-screen">
-      <div className="absolute translate-x-[76px] select-none cursor-pointer whitespace-nowrap flex translate-y-[34px] text-white font-instrument-sans size-[18px] z-10 gap-x-[20px]">
+      <div className="absolute translate-x-[76px] select-none cursor-pointer whitespace-nowrap flex translate-y-[34px] text-white font-instrument-sans size-[18px] z-20 gap-x-[20px]">
         <div
           onClick={() => navigate("/")}
           className={`cursor-pointer ${

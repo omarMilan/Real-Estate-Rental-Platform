@@ -22,13 +22,13 @@ export default function VideoSelector() {
       <div className=" relative flex flex-wrap gap-x-[26px] gap-y-[26px] pt-[26px] pl-[26px] pr-[26px] justify-center">
         <VideoButtons
           name="Full Tour"
-          url="https://example.com/FullTour.mp4"
+          url="5TAY0boEagA"
           onSelect={(url) => handleSelect(url, "Full Tour")}
           isSelected={activeButton === "Full Tour"} // Pass the active button state
         />
         <VideoButtons
           name="Master Bedroom"
-          url="https://example.com/MasterBedroom.mp4"
+          url="C2q_r0XW1CY"
           onSelect={(url) => handleSelect(url, "Master Bedroom")}
           isSelected={activeButton === "Master Bedroom"} // Pass the active button state
         />
@@ -81,8 +81,8 @@ export default function VideoSelector() {
           isSelected={activeButton === "Backyard"} // Pass the active button state
         />
       </div>
-      <div className="pt-[50px] flex justify-center items-center">
-        <Video name={activeButton} />
+      <div className="pt-[75px] flex justify-center items-center">
+        <Video name={activeButton} videoId={selectedVideo} />
       </div>
     </div>
   );
