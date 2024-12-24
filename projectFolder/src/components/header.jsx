@@ -37,8 +37,9 @@ export default function Header() {
           Video Tour
         </div>
         <div
+          onClick={() => navigate("/FloorPlan-Page")}
           className={`cursor-pointer ${
-            location.pathname === "/Floor-Plan"
+            location.pathname === "/FloorPlan-Page"
               ? "font-semibold"
               : "font-normal"
           }`}
