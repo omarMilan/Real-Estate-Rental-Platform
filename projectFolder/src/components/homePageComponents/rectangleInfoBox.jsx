@@ -1,5 +1,7 @@
 import bedLogo from "../../assets/logosImages/bedLogo.png";
 import bathLogo from "../../assets/logosImages/bathLogo.png";
+import sizeLogo from "../../assets/logosImages/sizeLogo.png";
+import mTapeLogo from "../../assets/logosImages/mTapeLogo.png";
 import { useNavigate } from "react-router-dom";
 import Button from "../button";
 
@@ -18,9 +20,11 @@ export default function RectInfoBox({ className }) {
           Bathrooms
         </div>
         <div className="flex items-end pb-3 italic text-white justify-center text-[13px]">
+          <img src={sizeLogo} className="absolute mb-2 h-[85px] w-[85px]" />
           1,859sqft
         </div>
         <div className="flex items-end pb-3 italic text-white justify-center text-[13px]">
+          <img src={mTapeLogo} className="absolute mb-3 h-[75px] w-[75px]" />
           0.26acre lot
         </div>
       </div>
